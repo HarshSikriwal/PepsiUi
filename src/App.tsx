@@ -1,7 +1,5 @@
-import "./App.css";
-
 function App() {
-  return <main className="container"></main>;
+  return <main>PEPSI</main>;
 }
 
 export default App;
