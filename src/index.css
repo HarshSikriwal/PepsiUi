@@ -15,8 +15,21 @@ body {
 
 #root {
   position: relative;
-  width: 60%;
-  height: 80%;
+  width: 75%;
+  height: 75%;
   background: linear-gradient(45deg, #0d3377, #246ab9);
   box-shadow: 0px 100px 100px -50px #06152e;
+  padding: 10px 30px;
+}
+
+.navbar-nav .nav-link.active {
+  color: white !important;
+}
+
+.navbar-nav .nav-link {
+  color: #b2c4db; /* Adjust the non-active link color as needed */
+}
+
+.navbar-nav .nav-link:hover {
+  color: white !important;
 }
