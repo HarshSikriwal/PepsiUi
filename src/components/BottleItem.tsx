@@ -12,14 +12,10 @@ const BottleItem = ({ product }: { product: (typeof Products)[0] }) => {
 
   useEffect(() => {
     const imageElement = document.getElementById(name) as HTMLImageElement;
-    const url1 = `/_vercel/image?url=${encodeURIComponent(
-      "/images/" + blueIcon.replace(/ /g, "_").split("/").at(-1)!
-    )}`;
+    const url1 = `${blueIcon.replace(/ /g, "_").split("/").at(-1)!}`;
     imageElement.src = url1;
     setBlueBottleUrl(url1);
-    const url2 = `/_vercel/image?url=${encodeURIComponent(
-      "/images/" + whiteIcon.replace(/ /g, "_").split("/").at(-1)!
-    )}`;
+    const url2 = `${whiteIcon.replace(/ /g, "_").split("/").at(-1)!}`;
 
     setWhiteBottleUrl(url2);
   }, []);

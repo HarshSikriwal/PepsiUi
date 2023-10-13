@@ -10,9 +10,8 @@ const Pepsi = () => {
     const imageElement = document.getElementById(
       `hero${name}`
     ) as HTMLImageElement;
-    const url = `/_vercel/image?url=${encodeURIComponent(
-      "/images/" + heroImg.replace(/ /g, "_").split("/").at(-1)!
-    )}`;
+    const url = `${heroImg.replace(/ /g, "_").split("/").at(-1)!}`;
+
     imageElement.src = url;
   }, [myProduct]);
   return (
