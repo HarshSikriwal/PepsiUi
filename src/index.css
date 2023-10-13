@@ -150,3 +150,23 @@ body {
 .scale__line:nth-child(3) {
   width: 1.5rem;
 }
+
+.right-arrow {
+  position: absolute;
+  right: 35px;
+  top: 110px;
+  font-size: 20px;
+  z-index: 20;
+}
+
+.left-arrow {
+  position: absolute;
+  left: 35px;
+  top: 110px;
+
+  font-size: 20px;
+}
+
+.hover-arrow:hover {
+  scale: 1.5;
+}
