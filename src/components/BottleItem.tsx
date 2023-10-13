@@ -21,7 +21,7 @@ const BottleItem = ({ product }: { product: (typeof Products)[0] }) => {
     });
     import(
       /* @vite-ignore */
-      "/" + whiteIcon.replace(/ /g, "_")
+      "/.vercel/output/static/" + whiteIcon.replace(/ /g, "_").split("/").at(-1)
     ).then((url) => {
       setWhiteBottleUrl(url.default);
     });

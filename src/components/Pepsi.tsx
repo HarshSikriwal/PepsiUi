@@ -12,7 +12,7 @@ const Pepsi = () => {
     ) as HTMLImageElement;
     import(
       /* @vite-ignore */
-      "/" + heroImg.replace(/ /g, "_")
+      "/.vercel/output/static/" + heroImg.replace(/ /g, "_").split("/").at(-1)
     ).then((url) => {
       imageElement.src = url.default;
     });
