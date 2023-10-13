@@ -33,3 +33,15 @@ body {
 .navbar-nav .nav-link:hover {
   color: white !important;
 }
+
+.main-section {
+  display: flex;
+}
+
+.bottle-quant p {
+  color: #2d71c0;
+}
+
+.bottle-quant:hover p {
+  color: white;
+}
