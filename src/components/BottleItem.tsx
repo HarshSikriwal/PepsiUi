@@ -12,21 +12,18 @@ const BottleItem = ({ product }: { product: (typeof Products)[0] }) => {
 
   useEffect(() => {
     const imageElement = document.getElementById(name) as HTMLImageElement;
-    import(
-      /* @vite-ignore */
-      "/.vercel/output/static/images" +
-        blueIcon.replace(/ /g, "_").split("/").at(-1)
-    ).then((url) => {
-      imageElement.src = url.default;
-      setBlueBottleUrl(url.default);
-    });
-    import(
-      /* @vite-ignore */
-      "/.vercel/output/static/images" +
-        whiteIcon.replace(/ /g, "_").split("/").at(-1)
-    ).then((url) => {
-      setWhiteBottleUrl(url.default);
-    });
+    const url1 = `/_vercel/image?url=/images/${blueIcon
+      .replace(/ /g, "_")
+      .split("/")
+      .at(-1)}`;
+    imageElement.src = url1;
+    setBlueBottleUrl(url1);
+    const url2 = `/_vercel/image?url=/images/${whiteIcon
+      .replace(/ /g, "_")
+      .split("/")
+      .at(-1)}`;
+
+    setWhiteBottleUrl(url2);
   }, []);
 
   useEffect(() => {

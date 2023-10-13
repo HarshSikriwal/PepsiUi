@@ -10,13 +10,11 @@ const Pepsi = () => {
     const imageElement = document.getElementById(
       `hero${name}`
     ) as HTMLImageElement;
-    import(
-      /* @vite-ignore */
-      "/.vercel/output/static/images" +
-        heroImg.replace(/ /g, "_").split("/").at(-1)
-    ).then((url) => {
-      imageElement.src = url.default;
-    });
+    const url = `/_vercel/image?url=/images/${heroImg
+      .replace(/ /g, "_")
+      .split("/")
+      .at(-1)}`;
+    imageElement.src = url;
   }, [myProduct]);
   return (
     <div className="pepsi">
