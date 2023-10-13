@@ -22,6 +22,10 @@ body {
   padding: 10px 30px;
 }
 
+.main {
+  position: relative;
+}
+
 .navbar-nav .nav-link.active {
   color: white !important;
 }
@@ -35,7 +39,10 @@ body {
 }
 
 .main-section {
+  margin-left: 60px;
   display: flex;
+  position: relative;
+  gap: 50px;
 }
 
 .bottle-quant p {
@@ -80,6 +87,8 @@ body {
 }
 
 .bottles {
+  position: absolute;
+  bottom: 2px;
   display: flex;
   gap: 30px;
 }
@@ -88,4 +97,56 @@ body {
   font-size: 10px;
   line-height: 0.03;
   padding-top: 32px;
+}
+
+.pepsi {
+  position: absolute;
+  right: 80px;
+}
+
+.card-serving {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 130px;
+  height: 160px;
+  background-color: #3788dd;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+}
+.serving {
+  padding: 8px 20px;
+}
+.custom-bg {
+  height: 40px;
+  background-color: #2862b3;
+}
+
+.per-container {
+  font-size: 10px;
+  text-align: left;
+}
+.small-text {
+  line-height: 0.06;
+}
+
+.scale {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 1 rem;
+  margin-top: 90px;
+  margin-right: 7px;
+}
+
+.scale__line {
+  width: 0.75rem;
+  height: 0.07rem;
+  background-color: white;
+}
+
+.scale__line:nth-child(3) {
+  width: 1.5rem;
 }

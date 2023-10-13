@@ -7,7 +7,7 @@ const Details = () => {
   const { myProduct } = useContext(DetailsContext);
   return (
     <div className="details">
-      <p className="fs-1 text-white fw-semibold">Pepsi Classic</p>
+      <p className="fs-1 text-white fw-semibold">{myProduct.name}</p>
       <p className="non-white">
         Carbonated Water, High Fructose, Corn Syrup, Caramel Color, Sugar,
         Phosphoric Acid, Caffeine, Citric Acid, Natual Flavor

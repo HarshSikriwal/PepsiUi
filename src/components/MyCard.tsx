@@ -17,7 +17,7 @@ const MyCard = ({
           <Card.Title className="fs-4 fw-bold ">{title}</Card.Title>
         </Card.Body>
       </Card>
-      <Card className="text-center card-sub rounded-0 p-2">
+      <Card className="text-center card-sub rounded-0 p-2 text-white">
         <Card.Subtitle>{percent}</Card.Subtitle>
       </Card>
     </div>
