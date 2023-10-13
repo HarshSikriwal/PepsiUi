@@ -14,14 +14,16 @@ const BottleItem = ({ product }: { product: (typeof Products)[0] }) => {
     const imageElement = document.getElementById(name) as HTMLImageElement;
     import(
       /* @vite-ignore */
-      "/.vercel/output/static/" + blueIcon.replace(/ /g, "_").split("/").at(-1)
+      "/.vercel/output/static/images" +
+        blueIcon.replace(/ /g, "_").split("/").at(-1)
     ).then((url) => {
       imageElement.src = url.default;
       setBlueBottleUrl(url.default);
     });
     import(
       /* @vite-ignore */
-      "/.vercel/output/static/" + whiteIcon.replace(/ /g, "_").split("/").at(-1)
+      "/.vercel/output/static/images" +
+        whiteIcon.replace(/ /g, "_").split("/").at(-1)
     ).then((url) => {
       setWhiteBottleUrl(url.default);
     });
