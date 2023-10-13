@@ -1,14 +1,9 @@
 {
+  "version": 3,
   "images": {
-    "sizes": [640, 750, 828, 1080, 1200],
+    "sizes": [256, 384, 600, 1000],
     "domains": [],
     "minimumCacheTTL": 60,
-    "remotePatterns": [
-      {
-        "protocol": "https",
-        "hostname": "^via\\.placeholder\\.com$",
-        "pathname": "^/1280x640/.*$"
-      }
-    ]
+    "formats": ["image/webp", "image/avif"]
   }
 }
