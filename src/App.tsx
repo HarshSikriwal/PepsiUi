@@ -12,13 +12,14 @@ function App() {
     <DetailsProvider>
       <main>
         <MyNav />
-        <div className="main-section">
+        <div className="main-section mx-5 mt-4 mb-0">
           <FaArrowLeft />
           <Details />
           <Pepsi />
           <Serving />
           <FaArrowRight />
         </div>
+
         <Bottles />
       </main>
     </DetailsProvider>

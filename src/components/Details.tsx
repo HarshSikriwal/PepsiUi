@@ -1,3 +1,4 @@
+import { Button } from "react-bootstrap";
 import { DetailsContext } from "./DetailsContext";
 import MyCard from "./MyCard";
 import { useContext } from "react";
@@ -39,6 +40,13 @@ const Details = () => {
           text="Protein"
         />
       </div>
+      <div className="notes non-white">
+        <p>Not a significant source of other nutrients.</p>
+        <p>*Percent Daily Values are based on a 2000 calorie diet.</p>
+      </div>
+      <Button className="rounded-5 bg-transparent table-hover border-white border-3 mt-2  px-4">
+        BUY PRODUCTS
+      </Button>
     </div>
   );
 };

@@ -16,7 +16,7 @@ body {
 #root {
   position: relative;
   width: 75%;
-  height: 75%;
+  height: 85%;
   background: linear-gradient(45deg, #0d3377, #246ab9);
   box-shadow: 0px 100px 100px -50px #06152e;
   padding: 10px 30px;
@@ -50,30 +50,42 @@ body {
   color: #7991b5;
 }
 .details {
-  width: 50%;
+  width: 55%;
 }
 .cards {
   display: flex;
   height: 100px;
   gap: 5px;
 }
-
-.card {
+.card-div {
   width: 20%;
+}
+.card-main {
+  height: 90px !important;
   align-items: center;
   justify-content: center;
   background-color: #1d4c93 !important;
 }
 
-.card-subtitle {
-  margin: 0px;
-  padding: 0px;
-  background-color: black;
+.card-sub {
+  /* padding: 0px; */
+  background-color: #2a6ab8 !important;
 }
 
 .card-text {
   font-size: 9px;
   text-align: center;
+  padding-top: 5px;
+  height: 20px;
 }
-.card-subtitle {
+
+.bottles {
+  display: flex;
+  gap: 30px;
+}
+
+.notes {
+  font-size: 10px;
+  line-height: 0.03;
+  padding-top: 32px;
 }

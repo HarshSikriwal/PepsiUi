@@ -10,14 +10,17 @@ const MyCard = ({
   text: string;
 }) => {
   return (
-    <Card className="rounded-0 border-0 text-white text-center ">
-      <Card.Body>
-        <Card.Text className="card-text text-white mb-1">{text}</Card.Text>
-        <Card.Title className="fs-4 fw-bold ">{title}</Card.Title>
-
-        <Card.Subtitle className="card-subtitle">{percent}</Card.Subtitle>
-      </Card.Body>
-    </Card>
+    <div className="card-div">
+      <Card className="card-main rounded-0 border-0 text-white text-center">
+        <Card.Body>
+          <Card.Text className="card-text text-white">{text}</Card.Text>
+          <Card.Title className="fs-4 fw-bold ">{title}</Card.Title>
+        </Card.Body>
+      </Card>
+      <Card className="text-center card-sub rounded-0 p-2">
+        <Card.Subtitle>{percent}</Card.Subtitle>
+      </Card>
+    </div>
   );
 };
 

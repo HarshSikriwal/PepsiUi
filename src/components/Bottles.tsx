@@ -3,7 +3,7 @@ import BottleItem from "./BottleItem";
 
 const Bottles = () => {
   return (
-    <div className="bottles">
+    <div className="bottles mx-5">
       {Products.map((product) => (
         <BottleItem key={product.name} product={product} />
       ))}
