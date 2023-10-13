@@ -45,3 +45,35 @@ body {
 .bottle-quant:hover p {
   color: white;
 }
+
+.non-white {
+  color: #7991b5;
+}
+.details {
+  width: 50%;
+}
+.cards {
+  display: flex;
+  height: 100px;
+  gap: 5px;
+}
+
+.card {
+  width: 20%;
+  align-items: center;
+  justify-content: center;
+  background-color: #1d4c93 !important;
+}
+
+.card-subtitle {
+  margin: 0px;
+  padding: 0px;
+  background-color: black;
+}
+
+.card-text {
+  font-size: 9px;
+  text-align: center;
+}
+.card-subtitle {
+}
